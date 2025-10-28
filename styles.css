@@ -650,32 +650,107 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        padding: 0 1rem;
     }
     
     .hero p {
         font-size: 1rem;
+        padding: 0 1rem;
     }
     
     .hero-cta {
         flex-direction: column;
         align-items: center;
+        padding: 0 1rem;
     }
     
     .chatbot-window {
-        width: calc(100% - 40px);
-        height: calc(100% - 100px);
-        bottom: 10px;
-        right: 20px;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+        padding: 1rem;
+    }
+    
+    .chatbot-button {
+        bottom: 15px;
+        right: 15px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .message-content {
+        max-width: 85%;
+        font-size: 0.95rem;
+    }
+    
+    .quick-actions {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     .nav-links {
-        gap: 1rem;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .navbar .container {
+        padding: 0 1rem;
     }
     
     .feature-grid,
     .services-grid {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .features,
+    .services {
+        padding: 3rem 0;
+    }
+    
+    .modal-content {
+        width: 95%;
+        max-width: 95%;
+        margin: 1rem;
+    }
+    
+    .btn-large {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .nav-links {
+        font-size: 0.85rem;
+        gap: 0.5rem;
+    }
+    
+    .feature-card,
+    .service-item {
+        padding: 1.5rem;
     }
 }
 
